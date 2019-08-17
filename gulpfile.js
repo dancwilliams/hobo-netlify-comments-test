@@ -1,3 +1,22 @@
+var gulp        = require("gulp");
+var sass        = require("gulp-sass");
+var serve       = require('gulp-serve');
+var shell       = require('gulp-shell');
+var clean       = require('gulp-clean');
+var gravatar    = require('gravatar');
+var request     = require("request");
+var fs          = require('fs');
+var concat      = require('gulp-concat');
+var config      = require('dotenv').config()
+
+
+/*
+  what goes where?
+*/
+var buildSrc = "src";
+var buildDest = "dist";
+
+
 /*
   Check if we need to help the developer setup the Netlify environment variables
 */
@@ -113,16 +132,6 @@ gulp.task("get:comments", function (done) {
     }
   });
 });
-
-
-/*
-  Watch src folder for changes
-*/
-gulp.task("watch", function () {
-  gulp.watch(buildSrc + "/**/*", gulp.parallel('build:local'))
-});
-
-
 
 /*
   Let's build this sucker for production
