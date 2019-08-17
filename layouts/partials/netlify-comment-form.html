@@ -6,7 +6,7 @@
 
 <form name="comments-queue" netlify-honeypot="full-name" netlify>
   <p class="honey">
-    <input name="path" type="hidden" value="{{ page.url }}">
+    <input name="path" type="hidden" value="{{ .Permalink }}">
     <label>Your full name: <input name="full-name"></label>
   </p>
   <p>
