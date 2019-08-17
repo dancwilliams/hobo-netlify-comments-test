@@ -1,4 +1,4 @@
-baseurl = "http://www.example.com"
+baseurl = "https://hobo-netlify-commetns-test.netlify.com"
 title = "johndoe"
 
 theme = "hugo-coder"
