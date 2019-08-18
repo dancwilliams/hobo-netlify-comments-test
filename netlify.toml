@@ -1,6 +1,7 @@
 [build]
   publish = "public"
   command = "gulp build"
+  NODE_ENV = "8.9.0"
 
 [context.production.environment]
   HUGO_VERSION = "0.57.0"
