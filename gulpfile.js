@@ -13,8 +13,8 @@ var config      = require('dotenv').config()
 /*
   what goes where?
 */
-var buildSrc = "src";
-var buildDest = "dist";
+var buildSrc = "";
+var buildDest = "";
 
 
 /*
